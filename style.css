@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+   background-color: rgb(0, 0, 0);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.clock{
+    overflow: hidden;
+    background-color: rgb(37, 225, 231);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    
+}
+
+.clock .number{ 
+    position: absolute;
+    width: 300px;;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.circle{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 13;
+}
+
+/* .circle .center{
+    left: 50%;
+    right: 49%;
+    bottom: 48%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: 12;
+} */
+
+
+.number1{transform: rotate(30deg);}
+.number2{transform: rotate(60deg);}
+.number3{transform: rotate(90deg);}
+.number4{transform: rotate(120deg);}
+.number5{transform: rotate(150deg);}
+.number6{transform: rotate(180deg);}
+.number7{transform: rotate(210deg);}
+.number8{transform: rotate(240deg);}
+.number9{transform: rotate(270deg);}
+.number10{transform: rotate(300deg);}
+.number11{transform: rotate(330deg);}
+
+
+
+.hand{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 50%; 
+    width: 7px;
+    height: 120px;
+    transform-origin: bottom;
+    border-top-left-radius:10px ;
+    z-index: 10;
+    border-top-right-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+
+#hour{
+    background-color: black;
+    width: 5px;
+    height: 75px;
+    z-index: 12;
+}
+
+#minute{
+    background-color: rgb(255, 0, 0);
+    width: 3px;
+    height: 110px;
+    z-index: 9;
+    
+}
+
+#second{
+    background-color: rgb(255, 255, 255);
+    height: 130px;
+    width: 2px;
+}
+
