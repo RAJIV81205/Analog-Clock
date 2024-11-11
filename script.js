@@ -13,7 +13,27 @@ setInterval(() => {
     second.style.transform = `rotate(${srotation}deg)`;
     console.log(hrotation , mrotation , srotation)
 
-    
+    if (hrs<10){
+        document.getElementById("hr").innerText = 0 +`${hrs}`;
+
+    }
+    else{
+        document.getElementById("hr").innerText = `${hrs}`;
+    }
+
+    if(mins<10){
+        document.getElementById("min").innerText = 0+`${mins}`;
+    }
+    else{
+        document.getElementById("min").innerText = `${mins}`;
+    }
+    if(secs<10){
+        document.getElementById("sec").innerText = 0+`${secs}`;
+    }
+    else{
+        document.getElementById("sec").innerText = `${secs}`;
+    }
+
 
 }, 1000)
 
