@@ -123,6 +123,12 @@ h1{
     transform: translateX(-50%);
 }
 
+.hands{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
 #hour{
     background-color: black;
     width: 5px;
